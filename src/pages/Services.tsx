@@ -65,7 +65,7 @@ const Services: React.FC = () => {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-2 gap-8"
           >
-            {servicesData.map((service, index) => (
+            {servicesData.map((service) => (
               <motion.div
                 key={service.id}
                 variants={itemVariants}
