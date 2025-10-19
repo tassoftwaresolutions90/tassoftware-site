@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "A modern e-commerce platform built with React and Node.js, featuring real-time inventory management and payment processing.",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+    "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
+    "category": "Web Development",
+    "liveUrl": "https://example-ecommerce.com",
+    "githubUrl": "https://github.com/company/ecommerce-platform",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Mobile Banking App",
+    "description": "Secure mobile banking application with biometric authentication and real-time transaction monitoring.",
+    "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
+    "technologies": ["React Native", "Firebase", "Biometric Auth", "Encryption"],
+    "category": "Mobile Development",
+    "liveUrl": "https://apps.apple.com/banking-app",
+    "githubUrl": "https://github.com/company/banking-app",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Cloud Migration Solution",
+    "description": "Complete cloud migration strategy and implementation for a Fortune 500 company's legacy systems.",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+    "technologies": ["AWS", "Docker", "Kubernetes", "Terraform"],
+    "category": "Cloud Solutions",
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "AI-Powered Analytics Dashboard",
+    "description": "Real-time analytics dashboard with machine learning insights and predictive analytics.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+    "technologies": ["Vue.js", "Python", "TensorFlow", "D3.js"],
+    "category": "Data Science",
+    "liveUrl": "https://analytics-dashboard.com",
+    "githubUrl": "https://github.com/company/analytics-dashboard",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Healthcare Management System",
+    "description": "Comprehensive healthcare management system with patient records and appointment scheduling.",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+    "technologies": ["Angular", "Spring Boot", "PostgreSQL", "HIPAA Compliance"],
+    "category": "Healthcare",
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "IoT Fleet Management",
+    "description": "Internet of Things solution for fleet tracking and vehicle maintenance optimization.",
+    "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop",
+    "technologies": ["React", "IoT Sensors", "MQTT", "Machine Learning"],
+    "category": "IoT",
+    "liveUrl": "https://fleet-management.io",
+    "githubUrl": "https://github.com/company/fleet-management",
+    "featured": true
+  }
+]

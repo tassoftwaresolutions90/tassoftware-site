@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Enterprise-Grade Solutions",
+    "subtitle": "Building the future with cutting-edge technology and innovative design",
+    "cta": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive solutions tailored to your business needs",
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "Modern, responsive websites built with the latest technologies"
+    },
+    "mobileApps": {
+      "title": "Mobile Applications",
+      "description": "Native and cross-platform mobile solutions for iOS and Android"
+    },
+    "consulting": {
+      "title": "Technology Consulting",
+      "description": "Strategic guidance to optimize your digital transformation"
+    },
+    "cloudSolutions": {
+      "title": "Cloud Solutions",
+      "description": "Scalable cloud infrastructure and migration services"
+    }
+  },
+  "about": {
+    "title": "About Our Team",
+    "subtitle": "Meet the experts behind our success",
+    "description": "We are a team of passionate professionals dedicated to delivering exceptional results. Our diverse backgrounds and expertise allow us to tackle complex challenges and create innovative solutions."
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Showcasing our latest work and achievements",
+    "viewProject": "View Project",
+    "viewCode": "View Code"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Trusted by businesses worldwide"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to start your next project? Let's talk!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "address": "123 Business Street, City, State 12345",
+    "phone": "+1 (555) 123-4567",
+    "emailContact": "hello@company.com"
+  },
+  "footer": {
+    "description": "Building the future with innovative technology solutions",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "allRightsReserved": "All rights reserved"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "readMore": "Read More",
+    "learnMore": "Learn More"
+  }
+}
