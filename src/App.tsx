@@ -17,7 +17,7 @@ import Contact from './pages/Contact';
 
 const App: React.FC = () => {
   return (
-    <Router basename="/enterprise-static-website">
+    <Router basename="/"> {/* Changed for custom domain */}
       <div className="min-h-screen bg-gray-50">
         <Header />
         <motion.main
