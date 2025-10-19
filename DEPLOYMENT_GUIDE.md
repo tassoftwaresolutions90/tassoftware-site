@@ -44,7 +44,7 @@ npm run deploy
 npm run build
 
 # Copy dist folder contents to your web server
-# Upload all files from dist/ to your domain's public_html or www folder
+# Upload all files from dist/ to your domain's public_html or www folder.
 ```
 
 ### Step 3: Configure Custom Domain
