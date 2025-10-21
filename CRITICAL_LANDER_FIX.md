@@ -29,7 +29,7 @@ This indicates that:
 1. **Go to Actions:** `https://github.com/tassoftwaresolutions90/tassoftware-site/actions`
 2. **Find "Deploy to GitHub Pages" workflow**
 3. **Click "Run workflow" button**
-4. **Wait for completion**
+4. **Wait for completion** 
 
 ### **Step 3: Test GitHub Pages URL First**
 
