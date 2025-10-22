@@ -91,7 +91,9 @@
         
         .logo-img {
             height: 40px;
-            width: auto;
+            width: 40px;
+            border-radius: 50%;
+            object-fit: cover;
             transition: transform 0.3s ease;
         }
         
@@ -1437,9 +1439,29 @@
                     // Clear any existing content
                     heroBackground.innerHTML = '';
 
-                    // List of image files in the data/img folder
-                    const imageFiles = ['img-1.jpg', 'img-2.jpg', 'img-3.jpg'];
-                    const images = [];
+                    // Try to load images dynamically - start with known pattern and expand
+                    const imageFiles = [];
+                    let imageNumber = 1;
+                    const maxAttempts = 20; // Allow up to 20 images
+                    
+                    // First, try the standard pattern (img-1.jpg, img-2.jpg, etc.)
+                    for (let i = 0; i < maxAttempts; i++) {
+                        const imageFile = `img-${imageNumber}.jpg`;
+                        imageFiles.push(imageFile);
+                        imageNumber++;
+                    }
+                    
+                    // Also try other common patterns
+                    const additionalPatterns = [
+                        'team-1.jpg', 'team-2.jpg', 'team-3.jpg', 'team-4.jpg', 'team-5.jpg',
+                        'image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg',
+                        'photo1.jpg', 'photo2.jpg', 'photo3.jpg', 'photo4.jpg', 'photo5.jpg'
+                    ];
+                    
+                    imageFiles.push(...additionalPatterns);
+                    
+                    const loadedImages = [];
+                    let loadedCount = 0;
                     
                     // Load all images
                     for (let i = 0; i < imageFiles.length; i++) {
@@ -1451,30 +1473,45 @@
                         
                         // Add error handling
                         img.onerror = () => {
-                            console.warn(`Failed to load image: ${imageFile}`);
-                            // Create a placeholder if image fails to load
-                            img.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23f8f9fa'/%3E%3Ctext x='600' y='400' text-anchor='middle' font-family='Inter' font-size='24' fill='%235d6d7e'%3E${imageFile}%3C/text%3E%3C/svg%3E`;
+                            // Image doesn't exist, continue to next
+                            return;
                         };
                         
                         img.onload = () => {
-                            images.push(img);
+                            loadedImages.push(img);
                             heroBackground.appendChild(img);
+                            loadedCount++;
                             
-                            // If this is the first image, make it active
-                            if (i === 0) {
+                            // If this is the first loaded image, make it active
+                            if (loadedCount === 1) {
                                 img.classList.add('active');
                             }
                             
-                            // If this is the last image, start the cycling
-                            if (i === imageFiles.length - 1) {
-                                this.startImageCycling(images);
+                            // If we've loaded at least one image, start cycling
+                            if (loadedCount >= 1 && loadedImages.length === loadedCount) {
+                                this.startImageCycling(loadedImages);
                             }
                         };
                     }
                     
+                    // Fallback: if no images load, create a default background
+                    setTimeout(() => {
+                        if (loadedImages.length === 0) {
+                            this.createDefaultBackground(heroBackground);
+                        }
+                    }, 3000);
+                    
                 } catch (error) {
                     console.error('Error loading team images:', error);
                 }
+            }
+
+            createDefaultBackground(heroBackground) {
+                const defaultImg = document.createElement('img');
+                defaultImg.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23f8f9fa'/%3E%3Ccircle cx='200' cy='200' r='100' fill='%2334495e' opacity='0.1'/%3E%3Ccircle cx='800' cy='300' r='150' fill='%237f8c8d' opacity='0.1'/%3E%3Ccircle cx='1000' cy='600' r='120' fill='%232c3e50' opacity='0.1'/%3E%3Cpath d='M 0 400 Q 300 300 600 400 T 1200 400 L 1200 800 L 0 800 Z' fill='%2334495e' opacity='0.05'/%3E%3C/svg%3E`;
+                defaultImg.alt = 'Default background';
+                defaultImg.classList.add('active');
+                heroBackground.appendChild(defaultImg);
             }
 
             startImageCycling(images) {
