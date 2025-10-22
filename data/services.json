@@ -1,0 +1,140 @@
+[
+  {
+    "id": "saas-development",
+    "title": "SaaS Development",
+    "description": "Custom software-as-a-service solutions built with modern cloud technologies and scalable architectures.",
+    "icon": "☁️",
+    "features": [
+      "Cloud-native architecture",
+      "Scalable infrastructure",
+      "API development",
+      "User management systems",
+      "Multi-tenant solutions",
+      "Real-time analytics",
+      "Microservices architecture",
+      "Auto-scaling capabilities"
+    ],
+    "technologies": ["React", "Node.js", "AWS", "Docker", "Kubernetes", "PostgreSQL"],
+    "pricing": {
+      "basic": "$2,999",
+      "professional": "$4,999",
+      "enterprise": "Custom"
+    },
+    "timeline": "8-12 weeks"
+  },
+  {
+    "id": "web-development",
+    "title": "Web Development",
+    "description": "Modern, responsive websites and web applications built with the latest technologies.",
+    "icon": "🌐",
+    "features": [
+      "Responsive design",
+      "Progressive Web Apps",
+      "SEO optimization",
+      "Performance optimization",
+      "E-commerce solutions",
+      "Content management systems",
+      "Single Page Applications",
+      "Mobile-first approach"
+    ],
+    "technologies": ["React", "Vue.js", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "pricing": {
+      "basic": "$1,999",
+      "professional": "$3,499",
+      "enterprise": "Custom"
+    },
+    "timeline": "4-8 weeks"
+  },
+  {
+    "id": "digital-marketing",
+    "title": "Digital Marketing",
+    "description": "Comprehensive digital marketing strategies to boost your online presence and drive business growth.",
+    "icon": "📱",
+    "features": [
+      "SEO & SEM",
+      "Social media marketing",
+      "Content strategy",
+      "Analytics & reporting",
+      "Email marketing",
+      "Conversion optimization",
+      "PPC advertising",
+      "Social media management"
+    ],
+    "technologies": ["Google Analytics", "Facebook Ads", "Google Ads", "HubSpot", "Mailchimp", "Hootsuite"],
+    "pricing": {
+      "basic": "$999/month",
+      "professional": "$1,999/month",
+      "enterprise": "Custom"
+    },
+    "timeline": "Ongoing"
+  },
+  {
+    "id": "automation",
+    "title": "Automation",
+    "description": "Intelligent automation solutions to streamline your business processes and increase efficiency.",
+    "icon": "🤖",
+    "features": [
+      "Workflow automation",
+      "Process optimization",
+      "Integration solutions",
+      "Custom automation tools",
+      "RPA implementation",
+      "Business process reengineering",
+      "API integrations",
+      "Data automation"
+    ],
+    "technologies": ["Python", "Zapier", "Microsoft Power Automate", "UiPath", "Selenium", "Docker"],
+    "pricing": {
+      "basic": "$1,499",
+      "professional": "$2,999",
+      "enterprise": "Custom"
+    },
+    "timeline": "6-10 weeks"
+  },
+  {
+    "id": "ai-consulting",
+    "title": "AI Consulting",
+    "description": "Strategic AI implementation and consulting services to leverage artificial intelligence for business growth.",
+    "icon": "🧠",
+    "features": [
+      "AI strategy planning",
+      "Machine learning solutions",
+      "Data analytics",
+      "AI integration",
+      "Predictive modeling",
+      "Natural language processing",
+      "Computer vision",
+      "Deep learning"
+    ],
+    "technologies": ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "AWS SageMaker", "Google Cloud AI"],
+    "pricing": {
+      "basic": "$2,499",
+      "professional": "$4,999",
+      "enterprise": "Custom"
+    },
+    "timeline": "10-16 weeks"
+  },
+  {
+    "id": "technology-consulting",
+    "title": "Technology Consulting",
+    "description": "Strategic guidance to optimize your digital transformation and technology adoption.",
+    "icon": "🔧",
+    "features": [
+      "Technology assessment",
+      "Digital transformation",
+      "IT strategy",
+      "Technology roadmap",
+      "Cloud migration",
+      "Security consulting",
+      "Architecture review",
+      "Performance optimization"
+    ],
+    "technologies": ["AWS", "Azure", "Google Cloud", "Docker", "Kubernetes", "Terraform"],
+    "pricing": {
+      "basic": "$1,999",
+      "professional": "$3,499",
+      "enterprise": "Custom"
+    },
+    "timeline": "4-8 weeks"
+  }
+]

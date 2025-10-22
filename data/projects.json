@@ -1,0 +1,140 @@
+[
+  {
+    "id": "cloudsaas-platform",
+    "title": "CloudSaaS Platform",
+    "description": "Enterprise SaaS solution for project management with real-time collaboration features and advanced analytics.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='18' fill='%236b7280'%3ECloudSaaS Platform%3C/text%3E%3C/svg%3E",
+    "category": "SaaS Development",
+    "technologies": ["React", "Node.js", "AWS", "PostgreSQL", "Docker", "Redis"],
+    "client": "TechCorp Inc.",
+    "duration": "12 weeks",
+    "team_size": 6,
+    "challenge": "Building a scalable multi-tenant SaaS platform with real-time collaboration features",
+    "solution": "Implemented microservices architecture with WebSocket connections for real-time updates",
+    "results": [
+      "300% increase in team productivity",
+      "50% reduction in project management overhead",
+      "99.9% uptime achieved"
+    ],
+    "testimonial": {
+      "text": "TAS Software delivered an exceptional SaaS platform that transformed our project management processes.",
+      "author": "Sarah Johnson",
+      "role": "CEO, TechCorp Inc."
+    }
+  },
+  {
+    "id": "ai-analytics-dashboard",
+    "title": "AI-Powered Analytics Dashboard",
+    "description": "Intelligent business analytics platform with machine learning insights and predictive modeling capabilities.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='18' fill='%236b7280'%3EAI Analytics Dashboard%3C/text%3E%3C/svg%3E",
+    "category": "AI Consulting",
+    "technologies": ["Python", "TensorFlow", "React", "D3.js", "AWS SageMaker", "MongoDB"],
+    "client": "DataInsights Corp",
+    "duration": "16 weeks",
+    "team_size": 4,
+    "challenge": "Creating an AI-powered analytics platform that could process millions of data points in real-time",
+    "solution": "Implemented machine learning pipelines with real-time data processing and interactive visualizations",
+    "results": [
+      "85% improvement in data processing speed",
+      "90% accuracy in predictive modeling",
+      "40% increase in business insights"
+    ],
+    "testimonial": {
+      "text": "The AI analytics dashboard provided insights we never knew existed. Game-changing solution!",
+      "author": "Michael Chen",
+      "role": "CTO, DataInsights Corp"
+    }
+  },
+  {
+    "id": "ecommerce-automation",
+    "title": "E-commerce Automation Suite",
+    "description": "Comprehensive automation tools for e-commerce businesses with inventory management and order processing.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='18' fill='%236b7280'%3EE-commerce Automation%3C/text%3E%3C/svg%3E",
+    "category": "Automation",
+    "technologies": ["Vue.js", "Python", "Docker", "MongoDB", "Celery", "Redis"],
+    "client": "ShopMax Retail",
+    "duration": "10 weeks",
+    "team_size": 5,
+    "challenge": "Automating complex e-commerce workflows including inventory management and order fulfillment",
+    "solution": "Built custom automation tools with API integrations for seamless workflow management",
+    "results": [
+      "60% reduction in manual processing time",
+      "95% accuracy in inventory management",
+      "200% increase in order processing speed"
+    ],
+    "testimonial": {
+      "text": "The automation suite revolutionized our operations. We can now handle 3x more orders with the same team.",
+      "author": "Emily Rodriguez",
+      "role": "Operations Director, ShopMax Retail"
+    }
+  },
+  {
+    "id": "mobile-app-development",
+    "title": "Cross-Platform Mobile App",
+    "description": "Native-feeling mobile application for iOS and Android with real-time features and offline capabilities.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='18' fill='%236b7280'%3EMobile App%3C/text%3E%3C/svg%3E",
+    "category": "Web Development",
+    "technologies": ["React Native", "TypeScript", "Firebase", "Redux", "Expo", "AWS"],
+    "client": "FitnessTracker Pro",
+    "duration": "14 weeks",
+    "team_size": 4,
+    "challenge": "Creating a cross-platform mobile app with real-time data synchronization and offline capabilities",
+    "solution": "Implemented React Native with Firebase for real-time sync and local storage for offline functionality",
+    "results": [
+      "4.8/5 app store rating",
+      "100k+ downloads in first month",
+      "95% user retention rate"
+    ],
+    "testimonial": {
+      "text": "The mobile app exceeded our expectations. Users love the smooth experience and offline capabilities.",
+      "author": "David Park",
+      "role": "Product Manager, FitnessTracker Pro"
+    }
+  },
+  {
+    "id": "digital-marketing-campaign",
+    "title": "Digital Marketing Campaign",
+    "description": "Comprehensive digital marketing strategy that increased online presence and drove significant business growth.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='18' fill='%236b7280'%3EDigital Marketing%3C/text%3E%3C/svg%3E",
+    "category": "Digital Marketing",
+    "technologies": ["Google Analytics", "Facebook Ads", "Google Ads", "HubSpot", "Mailchimp", "Hootsuite"],
+    "client": "GrowthStart Inc.",
+    "duration": "6 months",
+    "team_size": 3,
+    "challenge": "Launching a comprehensive digital marketing campaign to increase brand awareness and lead generation",
+    "solution": "Implemented multi-channel marketing strategy with SEO, PPC, social media, and email marketing",
+    "results": [
+      "250% increase in website traffic",
+      "180% increase in lead generation",
+      "300% ROI on marketing spend"
+    ],
+    "testimonial": {
+      "text": "The digital marketing campaign transformed our online presence. We saw incredible growth in just 6 months.",
+      "author": "Lisa Wang",
+      "role": "Marketing Director, GrowthStart Inc."
+    }
+  },
+  {
+    "id": "cloud-migration",
+    "title": "Cloud Migration & Optimization",
+    "description": "Complete cloud migration strategy with infrastructure optimization and cost reduction.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='18' fill='%236b7280'%3ECloud Migration%3C/text%3E%3C/svg%3E",
+    "category": "Technology Consulting",
+    "technologies": ["AWS", "Docker", "Kubernetes", "Terraform", "Ansible", "Prometheus"],
+    "client": "Enterprise Solutions Ltd",
+    "duration": "8 weeks",
+    "team_size": 5,
+    "challenge": "Migrating legacy on-premise infrastructure to cloud with zero downtime",
+    "solution": "Implemented blue-green deployment strategy with automated infrastructure provisioning",
+    "results": [
+      "40% reduction in infrastructure costs",
+      "99.9% uptime during migration",
+      "50% improvement in application performance"
+    ],
+    "testimonial": {
+      "text": "The cloud migration was seamless. We achieved significant cost savings and improved performance.",
+      "author": "Robert Taylor",
+      "role": "IT Director, Enterprise Solutions Ltd"
+    }
+  }
+]

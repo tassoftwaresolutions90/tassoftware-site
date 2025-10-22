@@ -1,0 +1,68 @@
+[
+  {
+    "id": "sarah-johnson-testimonial",
+    "name": "Sarah Johnson",
+    "company": "TechCorp Inc.",
+    "role": "CEO",
+    "content": "TAS Software transformed our business with their innovative SaaS solution. The results exceeded our expectations and we saw a 300% increase in team productivity within just 3 months.",
+    "rating": 5,
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='20' fill='%236b7280'%3ESJ%3C/text%3E%3C/svg%3E",
+    "project": "CloudSaaS Platform",
+    "results": "300% increase in productivity"
+  },
+  {
+    "id": "michael-chen-testimonial",
+    "name": "Michael Chen",
+    "company": "DataInsights Corp",
+    "role": "CTO",
+    "content": "Their AI consulting helped us implement machine learning solutions that increased our efficiency by 300%. The team's expertise in AI and data science is truly exceptional.",
+    "rating": 5,
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='20' fill='%236b7280'%3EMC%3C/text%3E%3C/svg%3E",
+    "project": "AI Analytics Dashboard",
+    "results": "300% efficiency increase"
+  },
+  {
+    "id": "emily-rodriguez-testimonial",
+    "name": "Emily Rodriguez",
+    "company": "E-commerce Plus",
+    "role": "Marketing Director",
+    "content": "The digital marketing strategies they implemented boosted our online sales by 250% in just 6 months. Their expertise in SEO and social media marketing is outstanding.",
+    "rating": 5,
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='20' fill='%236b7280'%3EER%3C/text%3E%3C/svg%3E",
+    "project": "Digital Marketing Campaign",
+    "results": "250% sales increase"
+  },
+  {
+    "id": "david-park-testimonial",
+    "name": "David Park",
+    "company": "FitnessTracker Pro",
+    "role": "Product Manager",
+    "content": "The mobile app exceeded our expectations. Users love the smooth experience and offline capabilities. We achieved 4.8/5 app store rating and 100k+ downloads in the first month.",
+    "rating": 5,
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='20' fill='%236b7280'%3EDP%3C/text%3E%3C/svg%3E",
+    "project": "Cross-Platform Mobile App",
+    "results": "4.8/5 rating, 100k+ downloads"
+  },
+  {
+    "id": "lisa-wang-testimonial",
+    "name": "Lisa Wang",
+    "company": "GrowthStart Inc.",
+    "role": "Marketing Director",
+    "content": "The digital marketing campaign transformed our online presence. We saw incredible growth in just 6 months with 250% increase in website traffic and 180% increase in lead generation.",
+    "rating": 5,
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='20' fill='%236b7280'%3ELW%3C/text%3E%3C/svg%3E",
+    "project": "Digital Marketing Campaign",
+    "results": "250% traffic increase, 180% lead increase"
+  },
+  {
+    "id": "robert-taylor-testimonial",
+    "name": "Robert Taylor",
+    "company": "Enterprise Solutions Ltd",
+    "role": "IT Director",
+    "content": "The cloud migration was seamless. We achieved significant cost savings and improved performance with 40% reduction in infrastructure costs and 50% improvement in application performance.",
+    "rating": 5,
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='20' fill='%236b7280'%3ERT%3C/text%3E%3C/svg%3E",
+    "project": "Cloud Migration & Optimization",
+    "results": "40% cost reduction, 50% performance improvement"
+  }
+]

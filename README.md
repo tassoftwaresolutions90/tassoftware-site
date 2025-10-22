@@ -1,276 +1,179 @@
-# Enterprise Static Website
+# 🚀 TAS Software - Enterprise Technology Solutions
 
-A modern, enterprise-grade static website built with React, Vite, Tailwind CSS, and Framer Motion. Features CMS-like content management through JSON files, internationalization (i18n), and smooth animations.
+A modern, responsive website for TAS Software, a technology company specializing in SaaS development, web applications, digital marketing, automation, and AI consulting services.
 
-## 🚀 Features
+## ✨ Features
 
-- **Modern Tech Stack**: React 18 + Vite + TypeScript + Tailwind CSS
-- **Smooth Animations**: Framer Motion for professional animations and transitions
-- **Internationalization**: English and Spanish support with react-i18next
-- **CMS-like Content**: Dynamic content loaded from JSON files (no backend required)
-- **Responsive Design**: Mobile-first approach with Tailwind CSS
-- **GitHub Pages Ready**: Fully static and deployable to GitHub Pages
-- **Performance Optimized**: Fast loading with Vite's optimized build process
+- **Modern Design**: Clean, professional, enterprise-grade design
+- **Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
+- **JSON Content Management**: Update content without touching code
+- **Fast Loading**: Optimized performance with modern CSS and JavaScript
+- **GitHub Pages Ready**: Static site deployment with custom domain support
+- **Mobile-First**: Touch-friendly navigation and responsive layouts
+
+## 🛠 Tech Stack
+
+- **Frontend**: Pure HTML5, CSS3, JavaScript (ES6+)
+- **Styling**: Modern CSS with Grid, Flexbox, Custom Properties
+- **Content**: JSON-based content management system
+- **Deployment**: GitHub Pages with custom domain support
+- **Performance**: Optimized assets, lazy loading, smooth animations
 
 ## 📁 Project Structure
 
 ```
-src/
-├── components/          # Reusable UI components
-│   ├── Header.tsx      # Navigation header with language switcher
-│   ├── Footer.tsx      # Site footer with links and contact info
-│   └── LanguageSwitcher.tsx
-├── pages/              # Page components
-│   ├── Home.tsx        # Landing page with hero and previews
-│   ├── Services.tsx    # Services showcase
-│   ├── About.tsx       # Team and company information
-│   ├── Projects.tsx   # Portfolio with filtering
-│   └── Contact.tsx     # Contact form and information
-├── data/               # JSON content files (CMS-like)
-│   ├── services.json   # Services data
-│   ├── team.json       # Team member information
-│   ├── projects.json   # Portfolio projects
-│   └── testimonials.json
-├── locales/            # Translation files
-│   ├── en.json         # English translations
-│   └── es.json         # Spanish translations
-├── i18n.ts            # i18n configuration
-├── App.tsx            # Main app component with routing
-└── main.tsx           # Application entry point
+TAS/
+├── index.html              # Main website file
+├── data/                   # JSON content files
+│   ├── content.json        # Main website content
+│   ├── services.json       # Services information
+│   ├── projects.json       # Portfolio projects
+│   ├── team.json          # Team members
+│   └── testimonials.json   # Client testimonials
+├── deploy-enhanced-website.bat  # Deployment script
+├── CONTENT_MANAGEMENT_GUIDE.md  # Content management guide
+└── README.md              # This file
 ```
 
-## 🛠 Installation & Setup
+## 🚀 Quick Start
 
-### Prerequisites
+### 1. Deploy to GitHub Pages
 
-- Node.js (v16 or higher)
-- npm or yarn
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd enterprise-static-website
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
-
-5. **Preview production build**
-   ```bash
-   npm run preview
-   ```
-
-## 🌐 Deployment to GitHub Pages
-
-### Method 1: Using gh-pages package (Recommended)
-
-1. **Install gh-pages**
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-
-2. **Deploy to GitHub Pages**
-   ```bash
-   npm run deploy
-   ```
-
-3. **Enable GitHub Pages in your repository settings**
-   - Go to Settings → Pages
-   - Select "Deploy from a branch"
-   - Choose "gh-pages" branch
-   - Save settings
-
-### Method 2: Using GitHub Actions (Alternative)
-
-Create `.github/workflows/deploy.yml`:
-
-```yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-        cache: 'npm'
-        
-    - name: Install dependencies
-      run: npm ci
-      
-    - name: Build
-      run: npm run build
-      
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+```bash
+# Run the deployment script
+deploy-enhanced-website.bat
 ```
+
+### 2. Update Content
+
+Edit JSON files in the `data/` directory:
+- `content.json` - Main website content
+- `services.json` - Services details
+- `projects.json` - Portfolio projects
+- `team.json` - Team members
+- `testimonials.json` - Client testimonials
+
+### 3. Custom Domain Setup
+
+1. Go to GitHub repository settings
+2. Navigate to Pages section
+3. Set custom domain to `tassoftware.online`
+4. Configure DNS records with your domain provider
 
 ## 📝 Content Management
 
-The website uses JSON files for dynamic content, making it easy to update without modifying code:
-
-### Services (`src/data/services.json`)
+### Update Company Information
 ```json
-[
-  {
-    "id": 1,
-    "title": "Web Development",
-    "description": "Modern, responsive websites...",
-    "features": ["Responsive Design", "SEO Optimization"]
-  }
-]
-```
-
-### Team (`src/data/team.json`)
-```json
-[
-  {
-    "id": 1,
-    "name": "John Doe",
-    "position": "CEO",
-    "bio": "Visionary leader...",
-    "image": "https://example.com/image.jpg",
-    "social": {
-      "linkedin": "https://linkedin.com/in/johndoe"
-    }
-  }
-]
-```
-
-### Projects (`src/data/projects.json`)
-```json
-[
-  {
-    "id": 1,
-    "title": "E-Commerce Platform",
-    "description": "Modern e-commerce solution...",
-    "image": "https://example.com/project.jpg",
-    "technologies": ["React", "Node.js"],
-    "category": "Web Development",
-    "liveUrl": "https://example.com",
-    "featured": true
-  }
-]
-```
-
-## 🌍 Internationalization
-
-The website supports multiple languages through react-i18next:
-
-### Adding a New Language
-
-1. **Create translation file** (`src/locales/fr.json`)
-2. **Update i18n configuration** (`src/i18n.ts`)
-3. **Add language option** to `LanguageSwitcher.tsx`
-
-### Translation Structure
-```json
+// data/content.json
 {
-  "nav": {
-    "home": "Home",
-    "services": "Services"
-  },
   "hero": {
-    "title": "Enterprise-Grade Solutions",
-    "subtitle": "Building the future..."
+    "title": "Your Company Title",
+    "description": "Your company description"
+  },
+  "about": {
+    "title": "About Section",
+    "description": "About your company"
   }
+}
+```
+
+### Add New Service
+```json
+// data/services.json
+{
+  "id": "new-service",
+  "title": "Service Name",
+  "description": "Service description",
+  "icon": "🚀",
+  "features": ["Feature 1", "Feature 2"],
+  "technologies": ["React", "Node.js", "AWS"]
+}
+```
+
+### Add Team Member
+```json
+// data/team.json
+{
+  "id": "member-id",
+  "name": "Member Name",
+  "role": "Job Title",
+  "bio": "Member bio",
+  "expertise": ["Skill 1", "Skill 2"]
 }
 ```
 
 ## 🎨 Customization
 
-### Styling
-- Uses Tailwind CSS for styling
-- Custom animations defined in `tailwind.config.js`
-- Component-specific styles in `src/index.css`
+### Change Colors
+Edit CSS variables in `index.html`:
+```css
+:root {
+  --primary-color: #2563eb;      /* Main brand color */
+  --secondary-color: #7c3aed;    /* Secondary color */
+  --accent-color: #06b6d4;       /* Accent color */
+}
+```
 
-### Animations
-- Framer Motion animations throughout the site
-- Scroll-triggered animations with `whileInView`
-- Hover effects and micro-interactions
-
-### Colors & Branding
-- Primary color: Blue (configurable in Tailwind config)
-- Update brand name in `Header.tsx` and `Footer.tsx`
-- Replace logo placeholder with your brand logo
+### Update Icons
+Replace emoji icons in JSON files:
+- ☁️ for SaaS
+- 🌐 for Web Development
+- 📱 for Digital Marketing
+- 🤖 for Automation
+- 🧠 for AI Consulting
+- 🔧 for Technology Consulting
 
 ## 📱 Responsive Design
 
-The website is fully responsive with breakpoints:
-- Mobile: `< 768px`
-- Tablet: `768px - 1024px`
-- Desktop: `> 1024px`
+- **Mobile**: Touch-friendly navigation, optimized layouts
+- **Tablet**: Perfect medium screen experience
+- **Desktop**: Large screen optimization with grid layouts
+- **All Devices**: Responsive typography and spacing
 
-## 🔧 Configuration
+## 🚀 Deployment
 
-### Vite Configuration (`vite.config.ts`)
-```typescript
-export default defineConfig({
-  plugins: [react()],
-  base: '/enterprise-static-website/', // Update for your repo name
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-  },
-})
-```
+### GitHub Pages
+1. Push changes to main branch
+2. GitHub Pages automatically deploys
+3. Website available at: `https://username.github.io/repository-name`
 
-### Router Configuration
-The app uses React Router with GitHub Pages compatibility:
-- `basename` set to repository name
-- Hash routing as fallback for GitHub Pages
+### Custom Domain
+1. Set custom domain in GitHub Pages settings
+2. Configure DNS records with domain provider
+3. Enable HTTPS for secure connection
 
-## 🚀 Performance Features
+## 📊 Performance Features
 
-- **Code Splitting**: Automatic with Vite
-- **Image Optimization**: Responsive images with proper sizing
-- **Lazy Loading**: Components load as needed
-- **Minimal Bundle**: Tree-shaking and optimization
-- **Fast Refresh**: Hot module replacement in development
+- **Fast Loading**: Optimized CSS and JavaScript
+- **Smooth Animations**: CSS transitions and transforms
+- **Mobile Optimized**: Touch-friendly interactions
+- **SEO Ready**: Proper meta tags and semantic HTML
+- **Accessibility**: Screen reader friendly, keyboard navigation
 
-## 📄 License
+## 🔧 Development
 
-This project is open source and available under the [MIT License](LICENSE).
+### Local Development
+1. Open `index.html` in browser
+2. Edit JSON files in `data/` directory
+3. Refresh browser to see changes
+4. Deploy with deployment script
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### Content Updates
+1. Edit JSON files in `data/` directory
+2. Run `deploy-enhanced-website.bat`
+3. Changes go live in 2-5 minutes
 
 ## 📞 Support
 
-For support or questions, please open an issue in the GitHub repository.
+For questions or support:
+- 📧 Email: hello@tassoftware.online
+- 📞 Phone: +1 (555) 123-4567
+- 🌐 Website: https://tassoftware.online
+
+## 📄 License
+
+© 2025 TAS Software. All rights reserved.
 
 ---
 
-Built with ❤️ using React, Vite, and Tailwind CSS
+**Built with ❤️ for modern businesses**

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "alex-thompson",
+    "name": "Alex Thompson",
+    "role": "CEO & Founder",
+    "bio": "Technology visionary with 15+ years of experience in enterprise software development and digital transformation.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='24' fill='%236b7280'%3EAT%3C/text%3E%3C/svg%3E",
+    "linkedin": "https://linkedin.com/in/alexthompson",
+    "twitter": "https://twitter.com/alexthompson",
+    "email": "alex@tassoftware.online",
+    "expertise": ["Strategic Planning", "Technology Leadership", "Business Development"],
+    "experience": "15+ years",
+    "education": "MS Computer Science, Stanford University"
+  },
+  {
+    "id": "maria-garcia",
+    "name": "Maria Garcia",
+    "role": "CTO",
+    "bio": "Full-stack developer and cloud architecture expert specializing in scalable solutions and microservices.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='24' fill='%236b7280'%3EMG%3C/text%3E%3C/svg%3E",
+    "linkedin": "https://linkedin.com/in/mariagarcia",
+    "twitter": "https://twitter.com/mariagarcia",
+    "email": "maria@tassoftware.online",
+    "expertise": ["Cloud Architecture", "Microservices", "DevOps", "System Design"],
+    "experience": "12+ years",
+    "education": "BS Computer Engineering, UC Berkeley"
+  },
+  {
+    "id": "david-kim",
+    "name": "David Kim",
+    "role": "AI/ML Engineer",
+    "bio": "Machine learning specialist with expertise in deep learning, data science, and AI implementation.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='24' fill='%236b7280'%3EDK%3C/text%3E%3C/svg%3E",
+    "linkedin": "https://linkedin.com/in/davidkim",
+    "twitter": "https://twitter.com/davidkim",
+    "email": "david@tassoftware.online",
+    "expertise": ["Machine Learning", "Deep Learning", "Data Science", "AI Strategy"],
+    "experience": "10+ years",
+    "education": "PhD Machine Learning, MIT"
+  },
+  {
+    "id": "sarah-johnson",
+    "name": "Sarah Johnson",
+    "role": "Lead Frontend Developer",
+    "bio": "Frontend specialist with expertise in React, Vue.js, and modern web technologies.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='24' fill='%236b7280'%3ESJ%3C/text%3E%3C/svg%3E",
+    "linkedin": "https://linkedin.com/in/sarahjohnson",
+    "twitter": "https://twitter.com/sarahjohnson",
+    "email": "sarah@tassoftware.online",
+    "expertise": ["React", "Vue.js", "TypeScript", "UI/UX Design"],
+    "experience": "8+ years",
+    "education": "BS Computer Science, Carnegie Mellon"
+  },
+  {
+    "id": "michael-chen",
+    "name": "Michael Chen",
+    "role": "DevOps Engineer",
+    "bio": "DevOps specialist with expertise in cloud infrastructure, automation, and deployment pipelines.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='24' fill='%236b7280'%3EMC%3C/text%3E%3C/svg%3E",
+    "linkedin": "https://linkedin.com/in/michaelchen",
+    "twitter": "https://twitter.com/michaelchen",
+    "email": "michael@tassoftware.online",
+    "expertise": ["AWS", "Docker", "Kubernetes", "CI/CD", "Infrastructure"],
+    "experience": "9+ years",
+    "education": "BS Information Technology, Georgia Tech"
+  },
+  {
+    "id": "emily-rodriguez",
+    "name": "Emily Rodriguez",
+    "role": "Digital Marketing Specialist",
+    "bio": "Digital marketing expert with expertise in SEO, SEM, social media, and growth marketing strategies.",
+    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='24' fill='%236b7280'%3EER%3C/text%3E%3C/svg%3E",
+    "linkedin": "https://linkedin.com/in/emilyrodriguez",
+    "twitter": "https://twitter.com/emilyrodriguez",
+    "email": "emily@tassoftware.online",
+    "expertise": ["SEO", "SEM", "Social Media", "Content Marketing", "Analytics"],
+    "experience": "7+ years",
+    "education": "MBA Marketing, Wharton School"
+  }
+]

@@ -1,0 +1,181 @@
+{
+  "hero": {
+    "title": "Enterprise Technology Solutions",
+    "description": "Transforming businesses with cutting-edge SaaS development, web applications, digital marketing, automation, and AI consulting services."
+  },
+  "about": {
+    "title": "About TAS Software",
+    "description": "We are a team of passionate technology professionals dedicated to delivering exceptional results. Our diverse expertise allows us to tackle complex challenges and create innovative solutions that drive business success.",
+    "stats": {
+      "projects": "50+",
+      "clients": "25+",
+      "experience": "5+"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Ready to start your next project? Let's discuss your requirements and create something amazing together.",
+    "details": [
+      "📧 hello@tassoftware.online",
+      "📞 +1 (555) 123-4567",
+      "📍 123 Business Street, City, State 12345"
+    ]
+  },
+  "services": [
+    {
+      "icon": "☁️",
+      "title": "SaaS Development",
+      "description": "Custom software-as-a-service solutions built with modern cloud technologies and scalable architectures.",
+      "features": [
+        "Cloud-native architecture",
+        "Scalable infrastructure",
+        "API development",
+        "User management systems",
+        "Multi-tenant solutions",
+        "Real-time analytics"
+      ]
+    },
+    {
+      "icon": "🌐",
+      "title": "Web Development",
+      "description": "Modern, responsive websites and web applications built with the latest technologies including React, Vue.js, and Next.js.",
+      "features": [
+        "Responsive design",
+        "Progressive Web Apps",
+        "SEO optimization",
+        "Performance optimization",
+        "E-commerce solutions",
+        "Content management systems"
+      ]
+    },
+    {
+      "icon": "📱",
+      "title": "Digital Marketing",
+      "description": "Comprehensive digital marketing strategies to boost your online presence and drive business growth.",
+      "features": [
+        "SEO & SEM",
+        "Social media marketing",
+        "Content strategy",
+        "Analytics & reporting",
+        "Email marketing",
+        "Conversion optimization"
+      ]
+    },
+    {
+      "icon": "🤖",
+      "title": "Automation",
+      "description": "Intelligent automation solutions to streamline your business processes and increase efficiency.",
+      "features": [
+        "Workflow automation",
+        "Process optimization",
+        "Integration solutions",
+        "Custom automation tools",
+        "RPA implementation",
+        "Business process reengineering"
+      ]
+    },
+    {
+      "icon": "🧠",
+      "title": "AI Consulting",
+      "description": "Strategic AI implementation and consulting services to leverage artificial intelligence for business growth.",
+      "features": [
+        "AI strategy planning",
+        "Machine learning solutions",
+        "Data analytics",
+        "AI integration",
+        "Predictive modeling",
+        "Natural language processing"
+      ]
+    },
+    {
+      "icon": "🔧",
+      "title": "Technology Consulting",
+      "description": "Strategic guidance to optimize your digital transformation and technology adoption.",
+      "features": [
+        "Technology assessment",
+        "Digital transformation",
+        "IT strategy",
+        "Technology roadmap",
+        "Cloud migration",
+        "Security consulting"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Johnson",
+      "company": "TechCorp Inc.",
+      "role": "CEO",
+      "content": "TAS Software transformed our business with their innovative SaaS solution. The results exceeded our expectations.",
+      "rating": 5
+    },
+    {
+      "name": "Michael Chen",
+      "company": "StartupXYZ",
+      "role": "Founder",
+      "content": "Their AI consulting helped us implement machine learning solutions that increased our efficiency by 300%.",
+      "rating": 5
+    },
+    {
+      "name": "Emily Rodriguez",
+      "company": "E-commerce Plus",
+      "role": "Marketing Director",
+      "content": "The digital marketing strategies they implemented boosted our online sales by 250% in just 6 months.",
+      "rating": 5
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "CloudSaaS Platform",
+      "description": "Enterprise SaaS solution for project management with real-time collaboration features.",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='18' fill='%236b7280'%3ECloudSaaS Platform%3C/text%3E%3C/svg%3E",
+      "technologies": ["React", "Node.js", "AWS", "PostgreSQL"],
+      "category": "SaaS Development"
+    },
+    {
+      "title": "AI-Powered Analytics Dashboard",
+      "description": "Intelligent business analytics platform with machine learning insights and predictive modeling.",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='18' fill='%236b7280'%3EAI Analytics Dashboard%3C/text%3E%3C/svg%3E",
+      "technologies": ["Python", "TensorFlow", "React", "D3.js"],
+      "category": "AI Consulting"
+    },
+    {
+      "title": "E-commerce Automation Suite",
+      "description": "Comprehensive automation tools for e-commerce businesses with inventory management and order processing.",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='18' fill='%236b7280'%3EE-commerce Automation%3C/text%3E%3C/svg%3E",
+      "technologies": ["Vue.js", "Python", "Docker", "MongoDB"],
+      "category": "Automation"
+    }
+  ],
+  "team": [
+    {
+      "name": "Alex Thompson",
+      "role": "CEO & Founder",
+      "bio": "Technology visionary with 15+ years of experience in enterprise software development.",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='24' fill='%236b7280'%3EAT%3C/text%3E%3C/svg%3E",
+      "linkedin": "https://linkedin.com/in/alexthompson"
+    },
+    {
+      "name": "Maria Garcia",
+      "role": "CTO",
+      "bio": "Full-stack developer and cloud architecture expert specializing in scalable solutions.",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='24' fill='%236b7280'%3EMG%3C/text%3E%3C/svg%3E",
+      "linkedin": "https://linkedin.com/in/mariagarcia"
+    },
+    {
+      "name": "David Kim",
+      "role": "AI/ML Engineer",
+      "bio": "Machine learning specialist with expertise in deep learning and data science.",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23e5e7eb'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Inter' font-size='24' fill='%236b7280'%3EDK%3C/text%3E%3C/svg%3E",
+      "linkedin": "https://linkedin.com/in/davidkim"
+    }
+  ],
+  "company": {
+    "name": "TAS Software",
+    "tagline": "Transforming businesses with cutting-edge technology solutions",
+    "founded": "2020",
+    "location": "San Francisco, CA",
+    "mission": "To empower businesses with innovative technology solutions that drive growth and efficiency.",
+    "vision": "To be the leading provider of enterprise technology solutions globally."
+  }
+}
