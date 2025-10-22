@@ -201,8 +201,6 @@
         /* Hero Section */
         .hero {
             padding: 120px 0 80px;
-            background: linear-gradient(135deg, rgba(44, 62, 80, 0.9) 0%, rgba(52, 73, 94, 0.9) 100%), 
-                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23f8f9fa'/%3E%3Ccircle cx='200' cy='200' r='100' fill='%2334495e' opacity='0.1'/%3E%3Ccircle cx='800' cy='300' r='150' fill='%237f8c8d' opacity='0.1'/%3E%3Ccircle cx='1000' cy='600' r='120' fill='%232c3e50' opacity='0.1'/%3E%3Cpath d='M 0 400 Q 300 300 600 400 T 1200 400 L 1200 800 L 0 800 Z' fill='%2334495e' opacity='0.05'/%3E%3C/svg%3E") center/cover;
             color: white;
             text-align: center;
             position: relative;
@@ -210,6 +208,31 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+        }
+        
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+        
+        .hero-background img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .hero-background img.active {
+            opacity: 1;
         }
         
         .hero::before {
@@ -219,8 +242,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-            opacity: 0.3;
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.7) 0%, rgba(52, 73, 94, 0.7) 100%);
+            z-index: 2;
         }
         
         .hero-content {
@@ -232,103 +255,6 @@
             justify-content: center;
             align-items: center;
             padding: 2rem 0;
-        }
-        
-        /* Team Carousel */
-        .team-carousel {
-            position: relative;
-            height: 300px;
-            overflow: hidden;
-            z-index: 1;
-            margin-top: auto;
-        }
-        
-        .carousel-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .carousel-track {
-            display: flex;
-            height: 100%;
-            animation: slideLeft 20s linear infinite;
-        }
-        
-        .carousel-track img {
-            flex: 0 0 auto;
-            width: 300px;
-            height: 100%;
-            object-fit: cover;
-            margin-right: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-        
-        .carousel-track img:hover {
-            transform: scale(1.05);
-        }
-        
-        .carousel-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(44, 62, 80, 0.7) 0%, rgba(52, 73, 94, 0.7) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            z-index: 2;
-        }
-        
-        .carousel-overlay h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        .carousel-overlay p {
-            font-size: 1rem;
-            opacity: 0.9;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        }
-        
-        @keyframes slideLeft {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .hero {
-                min-height: 80vh;
-                padding: 80px 0 40px;
-            }
-            
-            .team-carousel {
-                height: 200px;
-            }
-            
-            .carousel-track img {
-                width: 250px;
-                margin-right: 15px;
-            }
-            
-            .carousel-overlay h2 {
-                font-size: 1.5rem;
-            }
-            
-            .carousel-overlay p {
-                font-size: 0.9rem;
-            }
         }
         
         .hero h1 {
@@ -534,6 +460,15 @@
             .team-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
+            }
+            
+            .hero {
+                min-height: 80vh;
+                padding: 80px 0 40px;
+            }
+            
+            .hero-content {
+                padding: 1rem 0;
             }
         }
         
@@ -1033,27 +968,15 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-background" id="hero-background">
+            <!-- Background images will be loaded dynamically -->
+        </div>
         <div class="hero-content container">
             <h1 id="hero-title">Enterprise Technology Solutions</h1>
             <p id="hero-description">Transforming businesses with cutting-edge SaaS development, web applications, digital marketing, automation, and AI consulting services.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">Start Your Project</a>
                 <a href="#services" class="btn btn-secondary">Our Services</a>
-            </div>
-        </div>
-        
-        <!-- Professional Team Images Carousel -->
-        <div class="team-carousel">
-            <div class="carousel-container">
-                <div class="carousel-track" id="carousel-track">
-                    <!-- Images will be loaded dynamically -->
-                </div>
-            </div>
-            <div class="carousel-overlay">
-                <div class="container">
-                    <h2>Our Professional Team in Action</h2>
-                    <p>Experienced professionals working together to deliver exceptional technology solutions</p>
-                </div>
             </div>
         </div>
     </section>
@@ -1508,18 +1431,19 @@
 
             async loadTeamImages() {
                 try {
-                    const carouselTrack = document.getElementById('carousel-track');
-                    if (!carouselTrack) return;
+                    const heroBackground = document.getElementById('hero-background');
+                    if (!heroBackground) return;
 
                     // Clear any existing content
-                    carouselTrack.innerHTML = '';
+                    heroBackground.innerHTML = '';
 
                     // List of image files in the data/img folder
                     const imageFiles = ['img-1.jpg', 'img-2.jpg', 'img-3.jpg'];
-                    const loadedImages = [];
+                    const images = [];
                     
-                    // Load known images
-                    for (const imageFile of imageFiles) {
+                    // Load all images
+                    for (let i = 0; i < imageFiles.length; i++) {
+                        const imageFile = imageFiles[i];
                         const img = document.createElement('img');
                         img.src = `./data/img/${imageFile}`;
                         img.alt = `Professional team working - ${imageFile}`;
@@ -1529,18 +1453,21 @@
                         img.onerror = () => {
                             console.warn(`Failed to load image: ${imageFile}`);
                             // Create a placeholder if image fails to load
-                            img.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f8f9fa'/%3E%3Ctext x='150' y='100' text-anchor='middle' font-family='Inter' font-size='16' fill='%235d6d7e'%3E${imageFile}%3C/text%3E%3C/svg%3E`;
+                            img.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23f8f9fa'/%3E%3Ctext x='600' y='400' text-anchor='middle' font-family='Inter' font-size='24' fill='%235d6d7e'%3E${imageFile}%3C/text%3E%3C/svg%3E`;
                         };
                         
                         img.onload = () => {
-                            loadedImages.push(img);
-                            carouselTrack.appendChild(img);
+                            images.push(img);
+                            heroBackground.appendChild(img);
                             
-                            // If this is the last known image, duplicate for seamless loop
-                            if (imageFile === imageFiles[imageFiles.length - 1]) {
-                                setTimeout(() => {
-                                    this.duplicateImagesForLoop(carouselTrack);
-                                }, 500);
+                            // If this is the first image, make it active
+                            if (i === 0) {
+                                img.classList.add('active');
+                            }
+                            
+                            // If this is the last image, start the cycling
+                            if (i === imageFiles.length - 1) {
+                                this.startImageCycling(images);
                             }
                         };
                     }
@@ -1550,12 +1477,22 @@
                 }
             }
 
-            duplicateImagesForLoop(carouselTrack) {
-                const images = carouselTrack.querySelectorAll('img');
-                images.forEach(img => {
-                    const clone = img.cloneNode(true);
-                    carouselTrack.appendChild(clone);
-                });
+            startImageCycling(images) {
+                if (images.length === 0) return;
+                
+                let currentIndex = 0;
+                
+                // Cycle through images every 4 seconds
+                setInterval(() => {
+                    // Remove active class from current image
+                    images[currentIndex].classList.remove('active');
+                    
+                    // Move to next image
+                    currentIndex = (currentIndex + 1) % images.length;
+                    
+                    // Add active class to next image
+                    images[currentIndex].classList.add('active');
+                }, 4000); // Change image every 4 seconds
             }
 
             loadFallbackContent() {
