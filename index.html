@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="icon" type="image/jpeg" href="TAS logo.jpg">
     
     <style>
         :root {
@@ -142,12 +142,15 @@
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: var(--shadow-sm);
+            border: 2px solid var(--primary-color);
         }
         
         .cta-button:hover {
             background: var(--primary-dark);
+            color: white;
             transform: translateY(-2px);
             box-shadow: var(--shadow-md);
+            border-color: var(--primary-dark);
         }
         
         /* Mobile Menu */
@@ -258,23 +261,27 @@
             background: var(--primary-color);
             color: white;
             box-shadow: var(--shadow-md);
+            border: 2px solid var(--primary-color);
         }
         
         .btn-primary:hover {
             background: var(--primary-dark);
+            color: white;
             transform: translateY(-2px);
             box-shadow: var(--shadow-lg);
+            border-color: var(--primary-dark);
         }
         
         .btn-secondary {
             background: transparent;
             color: white;
-            border-color: white;
+            border: 2px solid white;
         }
         
         .btn-secondary:hover {
             background: white;
             color: var(--primary-color);
+            border-color: white;
         }
         
         /* Services Section */
@@ -679,7 +686,7 @@
     <header class="header">
         <nav class="nav container">
             <a href="#home" class="logo">
-                <img src="logo.svg" alt="TAS Software" class="logo-img">
+                <img src="TAS logo.jpg" alt="TAS Software" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
