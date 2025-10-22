@@ -225,6 +225,100 @@
             z-index: 2;
         }
         
+        /* Team Carousel */
+        .team-carousel {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 300px;
+            overflow: hidden;
+            z-index: 0;
+        }
+        
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .carousel-track {
+            display: flex;
+            height: 100%;
+            animation: slideLeft 20s linear infinite;
+        }
+        
+        .carousel-track img {
+            flex: 0 0 auto;
+            width: 300px;
+            height: 100%;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .carousel-track img:hover {
+            transform: scale(1.05);
+        }
+        
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.8) 0%, rgba(52, 73, 94, 0.8) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+        
+        .carousel-overlay h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .carousel-overlay p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .team-carousel {
+                height: 200px;
+            }
+            
+            .carousel-track img {
+                width: 250px;
+                margin-right: 15px;
+            }
+            
+            .carousel-overlay h2 {
+                font-size: 1.8rem;
+            }
+            
+            .carousel-overlay p {
+                font-size: 1rem;
+            }
+        }
+        
         .hero h1 {
             font-size: clamp(2.5rem, 5vw, 4rem);
             margin-bottom: 1rem;
@@ -419,9 +513,16 @@
         
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
         }
         
         .team-member {
@@ -498,6 +599,25 @@
             background: var(--primary-color);
             color: white;
             transform: scale(1.1);
+        }
+        
+        .expertise-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+        
+        .expertise-tag {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
         /* Projects Section */
@@ -909,6 +1029,21 @@
                 <a href="#services" class="btn btn-secondary">Our Services</a>
             </div>
         </div>
+        
+        <!-- Professional Team Images Carousel -->
+        <div class="team-carousel">
+            <div class="carousel-container">
+                <div class="carousel-track" id="carousel-track">
+                    <!-- Images will be loaded dynamically -->
+                </div>
+            </div>
+            <div class="carousel-overlay">
+                <div class="container">
+                    <h2>Our Professional Team in Action</h2>
+                    <p>Experienced professionals working together to deliver exceptional technology solutions</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Services Section -->
@@ -1080,7 +1215,12 @@
                     </div>
                     <h3>Satyam Parmar</h3>
                     <p class="role">CEO & Founder</p>
-                    <p>Visionary leader with 10+ years of experience in software development and business strategy.</p>
+                    <p>Strategic leader with 10+ years of experience driving digital transformation initiatives across diverse industries. Expert in business strategy, technology roadmapping, and enterprise software solutions.</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Business Strategy</span>
+                        <span class="expertise-tag">Digital Transformation</span>
+                        <span class="expertise-tag">Enterprise Solutions</span>
+                    </div>
                     <div class="social-links">
                         <a href="#" aria-label="LinkedIn">📱</a>
                         <a href="#" aria-label="Twitter">🐦</a>
@@ -1093,8 +1233,13 @@
                         <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Ccircle cx='150' cy='150' r='150' fill='%23f8f9fa'/%3E%3Ccircle cx='150' cy='120' r='50' fill='%2334495e'/%3E%3Cpath d='M 50 280 Q 150 200 250 280 L 250 300 L 50 300 Z' fill='%237f8c8d'/%3E%3Ctext x='150' y='320' text-anchor='middle' font-family='Inter' font-size='14' fill='%235d6d7e'%3ECTO%3C/text%3E%3C/svg%3E" alt="CTO">
                     </div>
                     <h3>Rahul Tomar</h3>
-                    <p class="role">CTO</p>
-                    <p>Technology expert specializing in AI, cloud architecture, and scalable software solutions.</p>
+                    <p class="role">Chief Technology Officer</p>
+                    <p>Technology visionary with expertise in cloud architecture, AI integration, and scalable enterprise solutions. Leads technical strategy and innovation initiatives for cutting-edge software development.</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Cloud Architecture</span>
+                        <span class="expertise-tag">AI Integration</span>
+                        <span class="expertise-tag">Technical Leadership</span>
+                    </div>
                     <div class="social-links">
                         <a href="#" aria-label="LinkedIn">📱</a>
                         <a href="#" aria-label="GitHub">💻</a>
@@ -1107,11 +1252,73 @@
                         <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Ccircle cx='150' cy='150' r='150' fill='%23f8f9fa'/%3E%3Ccircle cx='150' cy='120' r='50' fill='%2334495e'/%3E%3Cpath d='M 50 280 Q 150 200 250 280 L 250 300 L 50 300 Z' fill='%237f8c8d'/%3E%3Ctext x='150' y='320' text-anchor='middle' font-family='Inter' font-size='14' fill='%235d6d7e'%3EDesigner%3C/text%3E%3C/svg%3E" alt="Designer">
                     </div>
                     <h3>Akshay Sharma</h3>
-                    <p class="role">Lead Designer</p>
-                    <p>Creative designer with expertise in UX/UI design, brand identity, and digital marketing.</p>
+                    <p class="role">Lead UX/UI Designer</p>
+                    <p>Creative design leader specializing in user experience, interface design, and digital brand strategy. Expert in creating intuitive, engaging digital experiences that drive business growth and user satisfaction.</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">UX/UI Design</span>
+                        <span class="expertise-tag">Brand Strategy</span>
+                        <span class="expertise-tag">Digital Marketing</span>
+                    </div>
                     <div class="social-links">
                         <a href="#" aria-label="Dribbble">🎨</a>
                         <a href="#" aria-label="Behance">📐</a>
+                        <a href="#" aria-label="Email">📧</a>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Ccircle cx='150' cy='150' r='150' fill='%23f8f9fa'/%3E%3Ccircle cx='150' cy='120' r='50' fill='%2334495e'/%3E%3Cpath d='M 50 280 Q 150 200 250 280 L 250 300 L 50 300 Z' fill='%237f8c8d'/%3E%3Ctext x='150' y='320' text-anchor='middle' font-family='Inter' font-size='14' fill='%235d6d7e'%3EPHP%3C/text%3E%3C/svg%3E" alt="PHP Developer">
+                    </div>
+                    <h3>Ravikumar Singh</h3>
+                    <p class="role">Senior PHP/Laravel Developer</p>
+                    <p>Full-stack developer with 8+ years of expertise in PHP, Laravel framework, and web application development. Specializes in building scalable, secure, and high-performance web solutions across diverse industry domains.</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">PHP/Laravel</span>
+                        <span class="expertise-tag">Full-Stack Development</span>
+                        <span class="expertise-tag">Web Applications</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📱</a>
+                        <a href="#" aria-label="GitHub">💻</a>
+                        <a href="#" aria-label="Email">📧</a>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Ccircle cx='150' cy='150' r='150' fill='%23f8f9fa'/%3E%3Ccircle cx='150' cy='120' r='50' fill='%2334495e'/%3E%3Cpath d='M 50 280 Q 150 200 250 280 L 250 300 L 50 300 Z' fill='%237f8c8d'/%3E%3Ctext x='150' y='320' text-anchor='middle' font-family='Inter' font-size='14' fill='%235d6d7e'%3EBackend%3C/text%3E%3C/svg%3E" alt="Backend Developer">
+                    </div>
+                    <h3>Harshavardhan Gowda</h3>
+                    <p class="role">Senior Backend Architect</p>
+                    <p>Backend development expert with 10+ years of experience in Java, Spring Boot, microservices, and distributed systems. Specializes in building robust, scalable backend architectures using Kafka, cloud frameworks, and modern DevOps practices.</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Java/Spring Boot</span>
+                        <span class="expertise-tag">Microservices</span>
+                        <span class="expertise-tag">Distributed Systems</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📱</a>
+                        <a href="#" aria-label="GitHub">💻</a>
+                        <a href="#" aria-label="Email">📧</a>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Ccircle cx='150' cy='150' r='150' fill='%23f8f9fa'/%3E%3Ccircle cx='150' cy='120' r='50' fill='%2334495e'/%3E%3Cpath d='M 50 280 Q 150 200 250 280 L 250 300 L 50 300 Z' fill='%237f8c8d'/%3E%3Ctext x='150' y='320' text-anchor='middle' font-family='Inter' font-size='14' fill='%235d6d7e'%3EAI%3C/text%3E%3C/svg%3E" alt="AI Consultant">
+                    </div>
+                    <h3>Krishna Kumar</h3>
+                    <p class="role">AI Solutions Architect</p>
+                    <p>AI consulting specialist with 10+ years of experience in Generative AI, Python, LangChain, LangGraph, LLMs, RAG, and vector databases. Expert in designing and implementing cutting-edge AI solutions for enterprise applications.</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Generative AI</span>
+                        <span class="expertise-tag">LangChain/LangGraph</span>
+                        <span class="expertise-tag">Vector Databases</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📱</a>
+                        <a href="#" aria-label="GitHub">💻</a>
                         <a href="#" aria-label="Email">📧</a>
                     </div>
                 </div>
@@ -1266,6 +1473,7 @@
                 try {
                     await this.loadContent();
                     this.renderContent();
+                    this.loadTeamImages();
                     this.setupEventListeners();
                 } catch (error) {
                     console.error('Error loading content:', error);
@@ -1284,6 +1492,79 @@
                     console.error('Error fetching content:', error);
                     throw error;
                 }
+            }
+
+            async loadTeamImages() {
+                try {
+                    const carouselTrack = document.getElementById('carousel-track');
+                    if (!carouselTrack) return;
+
+                    // Try to load images dynamically
+                    // Start with known images and try to load more
+                    const imageFiles = ['img-1.jpg', 'img-2.jpg', 'img-3.jpg'];
+                    const loadedImages = [];
+                    
+                    // Load known images
+                    for (const imageFile of imageFiles) {
+                        const img = document.createElement('img');
+                        img.src = `./data/img/${imageFile}`;
+                        img.alt = `Professional team working - ${imageFile}`;
+                        img.loading = 'lazy';
+                        
+                        // Add error handling
+                        img.onerror = () => {
+                            console.warn(`Failed to load image: ${imageFile}`);
+                        };
+                        
+                        img.onload = () => {
+                            loadedImages.push(img);
+                            carouselTrack.appendChild(img);
+                            
+                            // If this is the last known image, try to load additional images
+                            if (imageFile === imageFiles[imageFiles.length - 1]) {
+                                this.loadAdditionalImages(carouselTrack, loadedImages);
+                            }
+                        };
+                    }
+                    
+                } catch (error) {
+                    console.error('Error loading team images:', error);
+                }
+            }
+
+            async loadAdditionalImages(carouselTrack, loadedImages) {
+                // Try to load additional images (img-4.jpg, img-5.jpg, etc.)
+                let imageNumber = 4;
+                const maxAttempts = 10; // Limit to prevent infinite loops
+                
+                for (let i = 0; i < maxAttempts; i++) {
+                    const imageFile = `img-${imageNumber}.jpg`;
+                    const img = document.createElement('img');
+                    img.src = `./data/img/${imageFile}`;
+                    img.alt = `Professional team working - ${imageFile}`;
+                    img.loading = 'lazy';
+                    
+                    img.onload = () => {
+                        loadedImages.push(img);
+                        carouselTrack.appendChild(img);
+                    };
+                    
+                    img.onerror = () => {
+                        // Stop trying if image doesn't exist
+                        return;
+                    };
+                    
+                    imageNumber++;
+                }
+                
+                // After all images are loaded, duplicate for seamless loop
+                setTimeout(() => {
+                    const images = carouselTrack.querySelectorAll('img');
+                    images.forEach(img => {
+                        const clone = img.cloneNode(true);
+                        carouselTrack.appendChild(clone);
+                    });
+                }, 1000);
             }
 
             loadFallbackContent() {
