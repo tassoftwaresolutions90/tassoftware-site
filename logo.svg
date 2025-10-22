@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#2c3e50"/>
+  
+  <!-- Metallic gradient for all elements -->
+  <defs>
+    <linearGradient id="metallicGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#c0c0c0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a8a8a8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Wave/swoosh element above TAS -->
+  <path d="M 40 60 Q 100 40 160 60" stroke="url(#metallicGradient)" stroke-width="3" fill="none"/>
+  
+  <!-- TAS text -->
+  <text x="100" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="url(#metallicGradient)">TAS</text>
+  
+  <!-- SOFTWARE text -->
+  <text x="60" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="url(#metallicGradient)">SOFTWARE</text>
+  
+  <!-- SOLUTIONS text -->
+  <text x="140" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="url(#metallicGradient)">SOLUTIONS</text>
+  
+  <!-- Horizontal lines extending from SOFTWARE and SOLUTIONS -->
+  <line x1="30" y1="115" x2="50" y2="115" stroke="url(#metallicGradient)" stroke-width="1"/>
+  <line x1="150" y1="115" x2="170" y2="115" stroke="url(#metallicGradient)" stroke-width="1"/>
+</svg>

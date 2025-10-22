@@ -15,28 +15,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
     
     <style>
         :root {
-            --primary-color: #2563eb;
-            --primary-dark: #1d4ed8;
-            --secondary-color: #7c3aed;
-            --accent-color: #06b6d4;
-            --success-color: #10b981;
-            --warning-color: #f59e0b;
-            --error-color: #ef4444;
-            --text-primary: #1f2937;
-            --text-secondary: #6b7280;
-            --text-light: #9ca3af;
+            --primary-color: #2c3e50;
+            --primary-dark: #1a252f;
+            --secondary-color: #34495e;
+            --accent-color: #7f8c8d;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+            --error-color: #e74c3c;
+            --text-primary: #2c3e50;
+            --text-secondary: #5d6d7e;
+            --text-light: #85929e;
             --bg-primary: #ffffff;
-            --bg-secondary: #f8fafc;
-            --bg-dark: #0f172a;
-            --border-color: #e5e7eb;
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --bg-secondary: #f8f9fa;
+            --bg-dark: #2c3e50;
+            --bg-grey: #ecf0f1;
+            --border-color: #d5dbdb;
+            --shadow-sm: 0 1px 2px 0 rgb(44 62 80 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(44 62 80 / 0.1), 0 2px 4px -2px rgb(44 62 80 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(44 62 80 / 0.1), 0 4px 6px -4px rgb(44 62 80 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(44 62 80 / 0.1), 0 8px 10px -6px rgb(44 62 80 / 0.1);
         }
 
         * {
@@ -88,8 +89,14 @@
             gap: 0.5rem;
         }
         
-        .logo-icon {
-            font-size: 1.8rem;
+        .logo-img {
+            height: 40px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover .logo-img {
+            transform: scale(1.05);
         }
         
         .nav-links {
@@ -191,7 +198,7 @@
         /* Hero Section */
         .hero {
             padding: 120px 0 80px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: white;
             text-align: center;
             position: relative;
@@ -273,7 +280,7 @@
         /* Services Section */
         .services {
             padding: 80px 0;
-            background: var(--bg-secondary);
+            background: var(--bg-grey);
         }
         
         .section-title {
@@ -320,7 +327,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
         }
         
         .service-card:hover {
@@ -435,7 +442,7 @@
         /* Contact Section */
         .contact {
             padding: 80px 0;
-            background: var(--bg-secondary);
+            background: var(--bg-grey);
         }
         
         .contact-content {
@@ -672,8 +679,7 @@
     <header class="header">
         <nav class="nav container">
             <a href="#home" class="logo">
-                <span class="logo-icon">🚀</span>
-                TAS Software
+                <img src="logo.svg" alt="TAS Software" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
