@@ -207,6 +207,9 @@
             text-align: center;
             position: relative;
             overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         
         .hero::before {
@@ -222,18 +225,22 @@
         
         .hero-content {
             position: relative;
-            z-index: 2;
+            z-index: 3;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
         }
         
         /* Team Carousel */
         .team-carousel {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            position: relative;
             height: 300px;
             overflow: hidden;
-            z-index: 0;
+            z-index: 1;
+            margin-top: auto;
         }
         
         .carousel-container {
@@ -269,7 +276,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(44, 62, 80, 0.8) 0%, rgba(52, 73, 94, 0.8) 100%);
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.7) 0%, rgba(52, 73, 94, 0.7) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -279,14 +286,14 @@
         }
         
         .carousel-overlay h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         
         .carousel-overlay p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             opacity: 0.9;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
@@ -301,6 +308,11 @@
         }
         
         @media (max-width: 768px) {
+            .hero {
+                min-height: 80vh;
+                padding: 80px 0 40px;
+            }
+            
             .team-carousel {
                 height: 200px;
             }
@@ -311,11 +323,11 @@
             }
             
             .carousel-overlay h2 {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
             
             .carousel-overlay p {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
         }
         
@@ -1499,8 +1511,10 @@
                     const carouselTrack = document.getElementById('carousel-track');
                     if (!carouselTrack) return;
 
-                    // Try to load images dynamically
-                    // Start with known images and try to load more
+                    // Clear any existing content
+                    carouselTrack.innerHTML = '';
+
+                    // List of image files in the data/img folder
                     const imageFiles = ['img-1.jpg', 'img-2.jpg', 'img-3.jpg'];
                     const loadedImages = [];
                     
@@ -1514,15 +1528,19 @@
                         // Add error handling
                         img.onerror = () => {
                             console.warn(`Failed to load image: ${imageFile}`);
+                            // Create a placeholder if image fails to load
+                            img.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f8f9fa'/%3E%3Ctext x='150' y='100' text-anchor='middle' font-family='Inter' font-size='16' fill='%235d6d7e'%3E${imageFile}%3C/text%3E%3C/svg%3E`;
                         };
                         
                         img.onload = () => {
                             loadedImages.push(img);
                             carouselTrack.appendChild(img);
                             
-                            // If this is the last known image, try to load additional images
+                            // If this is the last known image, duplicate for seamless loop
                             if (imageFile === imageFiles[imageFiles.length - 1]) {
-                                this.loadAdditionalImages(carouselTrack, loadedImages);
+                                setTimeout(() => {
+                                    this.duplicateImagesForLoop(carouselTrack);
+                                }, 500);
                             }
                         };
                     }
@@ -1532,39 +1550,12 @@
                 }
             }
 
-            async loadAdditionalImages(carouselTrack, loadedImages) {
-                // Try to load additional images (img-4.jpg, img-5.jpg, etc.)
-                let imageNumber = 4;
-                const maxAttempts = 10; // Limit to prevent infinite loops
-                
-                for (let i = 0; i < maxAttempts; i++) {
-                    const imageFile = `img-${imageNumber}.jpg`;
-                    const img = document.createElement('img');
-                    img.src = `./data/img/${imageFile}`;
-                    img.alt = `Professional team working - ${imageFile}`;
-                    img.loading = 'lazy';
-                    
-                    img.onload = () => {
-                        loadedImages.push(img);
-                        carouselTrack.appendChild(img);
-                    };
-                    
-                    img.onerror = () => {
-                        // Stop trying if image doesn't exist
-                        return;
-                    };
-                    
-                    imageNumber++;
-                }
-                
-                // After all images are loaded, duplicate for seamless loop
-                setTimeout(() => {
-                    const images = carouselTrack.querySelectorAll('img');
-                    images.forEach(img => {
-                        const clone = img.cloneNode(true);
-                        carouselTrack.appendChild(clone);
-                    });
-                }, 1000);
+            duplicateImagesForLoop(carouselTrack) {
+                const images = carouselTrack.querySelectorAll('img');
+                images.forEach(img => {
+                    const clone = img.cloneNode(true);
+                    carouselTrack.appendChild(clone);
+                });
             }
 
             loadFallbackContent() {
