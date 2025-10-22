@@ -1,13 +1,13 @@
 @echo off
 echo.
 echo ========================================
-echo 🚀 ENHANCED WEBSITE DEPLOYMENT
+echo 🚀 TAS SOFTWARE WEBSITE DEPLOYMENT
 echo ========================================
 echo.
 
-echo [INFO] Deploying enhanced TAS Software website
+echo [INFO] Deploying TAS Software website
 echo [FEATURES] SaaS, Web Dev, Digital Marketing, Automation, AI Consulting
-echo [TECH] Modern responsive design with JSON content management
+echo [TECH] Pure HTML with JSON content management
 echo.
 
 REM Check if git is available
@@ -30,16 +30,15 @@ git --version
 echo.
 
 REM Add and commit all files
-echo [2/4] Adding enhanced website files...
+echo [2/4] Adding website files...
 git add .
-git commit -m "Enhanced website with modern features and JSON content management
+git commit -m "Update TAS Software website
 
-- Updated for software company (SaaS, Web Dev, Digital Marketing, Automation, AI Consulting)
-- Added JSON content management system
-- Implemented modern responsive design
-- Added mobile-first approach
-- Enhanced with latest tech stack
-- Optimized for GitHub Pages deployment"
+- Pure HTML website with JSON content management
+- Modern responsive design for all devices
+- Software company services (SaaS, Web Dev, Digital Marketing, Automation, AI Consulting)
+- Optimized for GitHub Pages deployment
+- Clean project structure"
 
 REM Push to main branch
 echo [3/4] Deploying to GitHub Pages...
@@ -58,18 +57,18 @@ if %errorlevel% neq 0 (
 
 echo ✅ Deployment successful!
 echo.
-echo 🎉 ENHANCED WEBSITE DEPLOYED!
+echo 🎉 WEBSITE DEPLOYED SUCCESSFULLY!
 echo.
 echo 📋 Website Features:
 echo.
+echo ✅ Pure HTML website (no build process needed)
 echo ✅ Modern responsive design (mobile-first)
 echo ✅ JSON content management system
 echo ✅ SaaS, Web Dev, Digital Marketing, Automation, AI Consulting
-echo ✅ Latest tech stack (React, Vue.js, Node.js, AWS, etc.)
 echo ✅ Mobile responsive (Android/iOS/Desktop)
 echo ✅ GitHub Pages compatible
 echo.
-echo 🌐 Your enhanced website is live at:
+echo 🌐 Your website is live at:
 echo - GitHub Pages: https://tassoftwaresolutions90.github.io/tassoftware-site/
 echo - Custom Domain: https://tassoftware.online
 echo.
@@ -80,8 +79,10 @@ echo - Modify projects in: data/projects.json
 echo - Update team in: data/team.json
 echo - Change testimonials in: data/testimonials.json
 echo.
+echo ⚡ GitHub Actions will automatically deploy your changes!
+echo.
 echo ========================================
-echo Enhanced website deployment completed! 🚀
+echo Website deployment completed! 🚀
 echo ========================================
 echo.
 pause
