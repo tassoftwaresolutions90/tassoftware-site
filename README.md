@@ -166,8 +166,8 @@ Replace emoji icons in JSON files:
 ## 📞 Support
 
 For questions or support:
-- 📧 Email: hello@tassoftware.online
-- 📞 Phone: +1 (555) 123-4567
+- 📧 Email: contact@tassoftware.online
+- 📞 Phone: +91 (861) 890-5855
 - 🌐 Website: https://tassoftware.online
 
 ## 📄 License
